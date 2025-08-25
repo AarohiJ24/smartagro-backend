@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: smartagro-backend
+    env: python
+    buildCommand: ""
+    startCommand: uvicorn server:app --host 0.0.0.0 --port 8080
+    plan: free
